@@ -4,7 +4,6 @@
 
 body{
   font-family: arial;
-  width: 1024px;
   margin: auto;
   background-color: snow;
 
@@ -15,21 +14,22 @@ body{
 }
 
 a{
-  font-weight: bold;
+  font-weight: none;
   font-size: 8pt;
   text-decoration: none;
   color: black;
-  padding: 5px;
+  margin: 5px;
 }
 
 a:hover{
-  border-bottom: 2px solid;
+  border-bottom: 1px dotted;
   color: none;
 }
 
 .nav{
   text-align: right;
   background-color: none;
+
 
 }
 
@@ -47,24 +47,39 @@ a:hover{
 
 .col{
   flex:0 0 50%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.slideshow{
+
 }
 
 #slideshow {
     margin: auto;
     position: relative;
-    width: 1024px;
-    height: 546px;
+    max-width: 100%;
+    max-height: 100%;
     box-shadow: 0 0 50px rgba(0,0,0,0.4);
+
 }
 
 #slideshow > div {
     position: absolute;
+    z-index: -1;
+    margin-bottom: 30px;
 
 }
 
-p{
+
+.footer{
+
+  margin-top: 700px;
   font-size: 8pt;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
+  background-color: none;
+
+
 }
